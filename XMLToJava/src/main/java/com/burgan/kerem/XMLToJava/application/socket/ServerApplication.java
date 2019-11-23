@@ -36,9 +36,6 @@ public class ServerApplication {
 
 				application.writeResponse(socket);
 				
-				Thread.currentThread().wait(50l);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
 			}
 		}
 
