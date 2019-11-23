@@ -6,6 +6,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.ZonedDateTime;
 
+import com.burgan.kerem.XMLToJava.application.ApplicationConstants;
 import com.burgan.kerem.XMLToJava.exception.WebException;
 
 public class SplittedFile extends File {
@@ -14,7 +15,7 @@ public class SplittedFile extends File {
 	protected long fileNumber;
 
 
-	private final static String relativePath = ".\\logs\\";
+	private final static String relativePath = ApplicationConstants.splittedFileRelativePath;
 	
 	public SplittedFile(String fileName, FileMode mode, long fileNumber) {
 		this(fileName, mode, 100, fileNumber);

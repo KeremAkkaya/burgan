@@ -2,7 +2,7 @@ package com.burgan.kerem.XMLToJava.strategy;
 
 import java.util.List;
 
-import com.burgan.kerem.XMLToJava.batch.FileSplitter;
+import com.burgan.kerem.XMLToJava.application.batch.FileSplitter;
 import com.burgan.kerem.XMLToJava.file.FileMode;
 import com.burgan.kerem.XMLToJava.file.MainFile;
 import com.burgan.kerem.XMLToJava.observer.ObserverSubject;

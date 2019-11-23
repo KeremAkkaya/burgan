@@ -4,7 +4,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.TimeZone;
 
-import com.burgan.kerem.XMLToJava.ApplicationConstants;
+import com.burgan.kerem.XMLToJava.application.ApplicationConstants;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.SerializationFeature;

@@ -3,7 +3,7 @@ package com.burgan.kerem.XMLToJava.request.adapter;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
-import com.burgan.kerem.XMLToJava.ApplicationConstants;
+import com.burgan.kerem.XMLToJava.application.ApplicationConstants;
 import com.burgan.kerem.XMLToJava.models.DataWrapper;
 import com.burgan.kerem.XMLToJava.request.JSONRequest;
 import com.burgan.kerem.XMLToJava.request.XMLRequest;

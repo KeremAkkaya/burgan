@@ -3,9 +3,6 @@ package com.burgan.kerem.XMLToJava.file;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -84,7 +81,6 @@ public abstract class File implements IFileIterator, IFileIO {
 		try {
 			return file.getFilePointer();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return 0l;
@@ -196,4 +192,9 @@ public abstract class File implements IFileIterator, IFileIO {
 		}
 	}
 
+	
+	@Override
+	public String toString() {
+		return String.format("File Name: %s - Path: %s",  buildFileName(), getPath());
+	}
 }
