@@ -26,7 +26,7 @@ Uygulama çalışırken console a stop yazılıp entera basıldığında uygulam
 
 
 ## Kullanılan Design Patternlar
-###Abstract Factory
+### Abstract Factory
 Bu pattern command pattern command objelerini oluşturmak amacıyla kullanılmıştır. Aslında command pattern a ait abstract factory design patternıdır.
 ### Factory
 Bu pattern birkaç yerde polymorphisim yapmak amacıyla ve objeleri soyutlamak amacıyla kullanılmıştır. Örneğin `RequestFactory` Json veya Xml request objelerini oluşturmak amacıyla kullanılmıştır.
