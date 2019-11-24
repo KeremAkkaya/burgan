@@ -8,19 +8,19 @@ Uygulama 3 farklı jar ile çalışacak şekilde export edilmiştir. Aşağıda 
 ### Server Uygulaması
 jarların olduğu lokasyonda basitçe aşağıdaki komut çalıştırılır. 9091 portunu dinleyen basit bir server sockettir.
 
-java -jar server.jar
+`java -jar server.jar`
 
 ### Client Uygulaması
 Bu uygulama 9091 portunu dinleyen servera istenilen sayıda ve nitelikte request gönderilmesini sağlar. Örneğin hazır trace XML inden 35 adet istek göndermek için aşağıdaki komut çalıştırılabilir. 
 
-java -jar client.jar t 35
+`java -jar client.jar t 35``
 
-'i' Information için 't' Trace hazır xml leri için parametriktir. 2. parametre de istek sayısını belirtir.
+'i' Information için 't' Trace hazır xml leri için parametriktir. 2. parametre istek sayısını belirtir.
 
 ### Batch
 Bu uygulama da tüm requestleri 100 erli parçalara ayırarak dosyaların bulunduğu lokasyonda /logs klasörüne kaydeder. Uygulamayı çalıştırmak için aşağıdaki komut kullanılabilir.
 
-java -jar batch.jar
+`java -jar batch.jar`
 
 Uygulama çalışırken console a stop yazılıp entera basıldığında uygulama işlemleri kesip kapanır. Uygulama tekrar çalıştırıldığında kaldığı yerden devam ederek çalışmasını sürdürür.
 
@@ -43,4 +43,7 @@ Tüm commandlar bir liste üzerinde tutulur ve istenilen noktalarda işlenmesi s
 ## Varsayımlar
 Uygulama dosya sistemi üzerinde kalınan noktaları tutmak için ".meta" dosyalarında bilgileri tutar.
 Uygulama çalışması sırasında manuel düzenlemeler uygulamada tutarsızlıklara yol açabilir.
+
+## Öneriler
+Requestlerin işlenmesi için chain of responsibility pattern kullanılabilir. 
  
