@@ -42,8 +42,14 @@ Tüm commandlar bir liste üzerinde tutulur ve istenilen noktalarda işlenmesi s
 
 ## Varsayımlar
 Uygulama dosya sistemi üzerinde kalınan noktaları tutmak için ".meta" dosyalarında bilgileri tutar.
-Uygulama çalışması sırasında manuel düzenlemeler uygulamada tutarsızlıklara yol açabilir.
+Tüm dosyalar uygulama tarafından yönetilmektedir.
+Uygulama çalışması sırasında dosya sisteminde manuel düzenlemeler uygulamada tutarsızlıklara yol açabilir.
 
 ## Öneriler
 Requestlerin işlenmesi için chain of responsibility pattern kullanılabilir. 
+
+## Geliştirilmesi Gereken Noktalar
+Uygulama sadece 9091 portunu dinlemektedir. Web container içine aktarılıp bir sunucu içerisinde çalıştırılması daha uygun olacaktır. 
+Loglama işlemleri için log4j gibi high level kütüphaneler tercih edilebilir. 
+Batch uygulaması daha parametrik hale getirilebilir. Bunun için parametre validasyonu ve yapısal bir parametre çalışması yapılması gerekmektedir. 
  
