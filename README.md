@@ -13,7 +13,7 @@ jarların olduğu lokasyonda basitçe aşağıdaki komut çalıştırılır. 909
 ### Client Uygulaması
 Bu uygulama 9091 portunu dinleyen servera istenilen sayıda ve nitelikte request gönderilmesini sağlar. Örneğin hazır trace XML inden 35 adet istek göndermek için aşağıdaki komut çalıştırılabilir. 
 
-`java -jar client.jar t 35``
+`java -jar client.jar t 35`
 
 'i' Information için 't' Trace hazır xml leri için parametriktir. 2. parametre istek sayısını belirtir.
 
